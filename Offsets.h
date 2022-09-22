@@ -15,8 +15,8 @@ struct Offsets_Garena
 	const size_t oTemplateManager_MinionList = 0x24ED788; //A3 ?? ?? ?? ?? E8 ?? ?? ?? ?? 83 C4 04 85 C0 74 32 // 12.18
 	const size_t oTemplateManager_MinionAndTurretList = 0x0;						//  | ERROR - BROKEN
 	const size_t oTemplateManager_MissleMap = 0x313D2B4; //84 C9 8D 85 ? ? ? ? // 12.18
-	const size_t oTemplateManager_AttackableUnitsList = 0x2491B6C;						//  | ERROR - BROKEN
-	const size_t oTemplateManager_AllTheShitsList = 0x2491B6C;						//  | 0x2991B6C
+	const size_t oTemplateManager_AttackableUnitsList = 0x24ED760;						//  | 12.18 // A3 ?? ?? ?? ?? E8 ?? ?? ?? ?? 83 C4 04 85 C0 74 09 8B C8 E8 ?? ?? ?? ?? EB 02 33 C0 6A 18 A3 ?? ?? ?? ?? E8 ?? ?? ?? ?? 83 C4 04 85 C0 74 09 8B C8 E8 ?? ?? ?? ?? EB 02 33 C0 6A 10
+	const size_t oTemplateManager_AllTheShitsList = 0x24ED760;						//  | 12.18 // A3 ?? ?? ?? ?? E8 ?? ?? ?? ?? 83 C4 04 85 C0 74 09 8B C8 E8 ?? ?? ?? ?? EB 02 33 C0 6A 18 A3 ?? ?? ?? ?? E8 ?? ?? ?? ?? 83 C4 04 85 C0 74 09 8B C8 E8 ?? ?? ?? ?? EB 02 33 C0 6A 10
 	const size_t oTemplateManager_ShopList = 0x0;						//  | ERROR - BROKEN
 	const size_t oTemplateManager_AIBaseList_2 = 0x0;						//  | ERROR - BROKEN
 	const size_t oTemplateManager_HeroList = 0x18A0014; //8B 15 ? ? ? ? 0F 44 C1 //12.18
@@ -24,22 +24,22 @@ struct Offsets_Garena
 	const size_t oTemplateManager_TurretList = 0x3134C94; //8B 35 ? ? ? ? 8B 76 18 //12.18
 	const size_t oTemplateManager_ObjManager = 0x189FF7C; //0x24BFACC; // 12.18
 	const size_t oTemplateManager_UnknownList_2 = 0x18423E4;						//  | 0x1D423E4
-	const size_t oHudInstance = 0x1842D70;						//  | 0x1D42D70
+	const size_t oHudInstance = 0x18A0040;						//  | 12.18 //8B 0D ?? ?? ?? ?? 84 D2
 	const size_t oNetClient = 0x0;						//  | ERROR - BROKEN
 	const size_t oZoomClass = 0x31012BC;						//  | 12.18
 	const size_t oLocalPlayer = 0x313D26C;						//  | 12.18
 	const size_t oObjManager = 0x189FF7C;                   //0x24BFACC; // 12.18
 	const size_t oGameTime = 0x3136040;                     //F3 0F 11 05 ? ? ? ? 8B 49 // 12.18
-	const size_t oRenderer = 0x311147C;						//  | 0x361147C
+	const size_t oRenderer = 0x31701FC;						//  | 12.18 //A1 ? ? ? ? 53 56 8B 35 ? ? ? ? 8D 1C 86
 	const size_t oW2sStatic = 0x316A730;					// 83 C4 04 5F 8B 8C 24 ? ? ? ? -> viewprojmatrices // 12.18
 	const size_t oMenuGUI = 0x30E11F8;						//  | 0x35E11F8
 	const size_t oMinimap = 0x313383C;                      //74 22 8B 0D ? ? ? ? 85 C9 74 18 80 79 38 00 //12.18
-	const size_t oPreCharData = 0x2A9C;						//  | 
+	const size_t oPreCharData = 0x2D34;						//  | 12.18
 	const size_t oCharData = 0x1C;						//  | 
 	const size_t oUnitInfo = 0x0;						//  | ERROR - BROKEN
-	const size_t oObjBaseAttackSpeed = 0x1D0;						//  | 
+	const size_t oObjBaseAttackSpeed = 0x1D0;						//  | 12.18
 	const size_t oObjBaseAttackSpeedRatio = 0x1D4;						//  | 
-	const size_t oMiniMapSize = 0x120;						//  | ERROR - BROKEN
+	const size_t oMiniMapSize = 0x128;						//  | 12.18
 	const size_t oHPBar_1 = 0x3089;						//12.18 
 	const size_t oHPBar_2 = oHPBar_1 + 0x7;						//12.18
 	const size_t oHPBar_3 = oHPBar_2 + 0x4;						//12.18
@@ -50,16 +50,16 @@ struct Offsets_Garena
 	const size_t oHPBar_Off_2 = 0x88;						//  | 
 	const size_t oHPBar_Zoom_1 = 0x0C;						//  | 
 	const size_t oHPBar_Zoom_2 = 0x264;						//  | 
-	const size_t oGetAIManager_1 = 0x2B9C;						//  | 
-	const size_t oGetAIManager_2 = 0x2B95;						//  | 
+	const size_t oGetAIManager_1 = 0x2E2C;						// 12.18, its either this or 0x2E14 
+	const size_t oGetAIManager_2 = oGetAIManager_1 - 0x7;						//  | 
 	const size_t oIsWallDWORD = 0x3109E98;						//  | 0x3609E98
 	const size_t oActionState = 0x1034;						//  | ERROR - BROKEN
-	const size_t oObjSpellBook = 0x2250;						//  | ERROR - BROKEN
-	const size_t oObjBuffMgr = 0x2098;						//  | 
-	const size_t oObjDirection = 0x1AF0;						//  | 
-	const size_t oObjInventory = 0x32E0;						//  | 
-	const size_t oObjChampionName2 = 0x2CB4;						//  | 
-	const size_t oObjChampionName = 0x2AC4;						//  | 
+	const size_t oObjSpellBook = 0x24C8;						//  | ERROR - BROKEN
+	const size_t oObjBuffMgr = 0x2310;						//  | 12.18
+	const size_t oObjDirection = 0x1AD0;						//  | 12.18
+	const size_t oObjInventory = 0x3588;						//  | 12.18
+	const size_t oObjChampionName2 = 0x2CB4;						//  | not used
+	const size_t oObjChampionName = 0x2D5C;						//  | 12.18
 	const size_t oObjSkinData = 0x2A9C;						//  | 
 	const size_t oObjBoundingRadius = 0x458;						//  | 
 	const size_t oAttackInfo = 0x30DA608;						//  | 0x35DA608
@@ -68,29 +68,29 @@ struct Offsets_Garena
 	const size_t oGetAttackDelayDWORD = 0x2491B3C;						//  | 0x2991B3C
 	const size_t oGetAttackDelayBASE = 0x2D59;						//  | 
 	const size_t oGetAttackDelayOffset = 0x1244;						//  | 
-	const size_t oObjExp = 0x329C;						//  | 
+	const size_t oObjExp = 0x337C;						//  | 12.18 // not ssure
 	const size_t oObjCombatType = 0x1FC8;						//  | 
 
 	//++ Find by Using Strings
-	const size_t oObjLevel = 0x32AC;						//  | 
+	const size_t oObjLevel = 0x353C;						//  | 12.18
 	const size_t oObjHPMaxPenalty = 0xDBC;						//  | 
-	const size_t oObjAllShield = 0xDDC;						//  | 
-	const size_t oObjPhysicalShield = 0xDEC;						//  | 
-	const size_t oObjMagicalShield = 0xDFC;						//  | 
-	const size_t oObjTargetable = 0xD04;						//  | 
+	const size_t oObjAllShield = 0xEB4;						//  | 
+	const size_t oObjPhysicalShield = oObjAllShield + 0x10;						//  | 
+	const size_t oObjMagicalShield = oObjAllShield + 0x20;						//  | 
+	const size_t oObjTargetable = 0xD04;						//  | 12.18
 
 	//++ Character Data
-	const size_t oObjMaxMana = 0x2AC;						//  | 
-	const size_t oObjMana = 0x29C;						//  | 
-	const size_t oObjMaxHealth = 0xDAC;						//  | 
-	const size_t oObjHealth = 0xD9C;						//  | 
-	const size_t oObjBaseAtk = 0x126C;						//  | 
-	const size_t oObjBonusAtk = 0x11E4;						//  | 
-	const size_t oObjAP = 0x127C;						//  | 
+	const size_t oObjMaxMana = 0x2AC;						//  | 12.18
+	const size_t oObjMana = 0x29C;						//  | 12.18
+	const size_t oObjMaxHealth = 0xE84;						//  | 12.18
+	const size_t oObjHealth = 0xE74;						//  | 12.18
+	const size_t oObjBaseAtk = 0x1354;						//  | 12.18
+	const size_t oObjBonusAtk = 0x12CC;						//  | 12.18
+	const size_t oObjAP = 0x1750;						//  | 
 	const size_t oObjBonusAP = 0x11F4;						//  | 
-	const size_t oObjMR = 0x129C;						//  | 
-	const size_t oObjBonusMR = 0x12A0;						//  | 
-	const size_t oObjAtkRange = 0x12B4;						//  | 
+	const size_t oObjMR = 0x1384;						//  | 
+	const size_t oObjBonusMR = 0x1388;						//  | 
+	const size_t oObjAtkRange = 0x139C;						//  | 12.18
 	const size_t oObjPercentCooldownMod = oCharacterIntermediate + 0x10;
 	const size_t oObjPercentCooldownCapMod = oCharacterIntermediate + 0x20;
 	const size_t oObjPassiveCooldownEndTime = oCharacterIntermediate + 0x30;
@@ -298,7 +298,7 @@ struct Offsets_Riot
 	const size_t oPreCharData = 0x2A9C;						//  | 
 	const size_t oCharData = 0x1C;						//  | 
 	const size_t oUnitInfo = 0x0;						//  | ERROR - BROKEN
-	const size_t oObjBaseAttackSpeed = 0x1D0;						//  | 
+	const size_t oObjBaseAttackSpeed = 0x1D0;						//  | 12.18
 	const size_t oObjBaseAttackSpeedRatio = 0x1D4;						//  | 
 	const size_t oMiniMapSize = 0x120;						//  | ERROR - BROKEN
 	const size_t oHPBar_1 = 0x2DF9;						//  | 
@@ -402,11 +402,11 @@ const size_t oObjIndex = 0x8;							// 	|  HEAP 2A010001
 const size_t oObjTeam = 0x34;							// 	| 100 
 const size_t oObjName = 0x54;							// 	| summoner name : eg nixeus2 || = 0x60
 const size_t oObjNetworkID = 0xB4;						// 	| = 0x400001e for local -> <HEAP>4000001E
-const size_t oObjPos = 0x1DC;							// 	| XYZ floats
-const size_t oObjIsDead = 0x21C;						// 10.4.308.9400 |  Last number will increase by one DEAD = odd number
-const size_t oObjVisibility = 0x274;					// 	| base+objmanager -> obj -> offset | 0x101 = VISSIBLE 0x100 = INVISIBLE
+const size_t oObjPos = 0x01DC;							// 	12.18 | XYZ floats
+const size_t oObjIsDead = 0x21C;						// 12.18 |  Last number will increase by one DEAD = odd number
+const size_t oObjVisibility = 0x274;					// 	12.18 +| base+objmanager -> obj -> offset | 0x101 = VISSIBLE 0x100 = INVISIBLE
 const size_t oStatusFlag = 0x3D4;						//  |~~ E8 ? ? ? ? 8B 4C 24 1C 8B F0 6A 00 //yi W = 512
-const size_t oObjRecallState = 0xD78;                    //     | 0 = no , 6 = yes 
+const size_t oObjRecallState = 0xD90;                    //    12.18 | 0 = no , 6 = yes 
 const size_t oObjRecallType = oObjRecallState + 0x18;    //     | 8 = normal , 11 = baron
 const size_t oOldCastSpell = 0x50B350;  //not use
 const size_t oDisableMove = 0x2D38;
@@ -428,17 +428,19 @@ const size_t oIsUntargetableToEnemies = oIsUntargetableToAllies - 0x10;						// 
 #define oscreenHeight 0x214
 #define oChatOpen 0x8
 
+
+//itemsllots are 12.18
 const size_t oItemSlotInst = 0x18;
 const size_t oItemInfo = 0xC;
 const size_t oItemData = 0x20;
 const size_t oItemSlotID = 0x68;
 
 //Missile Data
-const size_t MissileSpellInfo = 0x260; //		11.6 ==> 11.7
-const size_t MissileSrcIdx = 0x2C4; //			11.6 ==> 11.7
-const size_t MissileDestIdx = 0x318; //			11.6 ==> 11.7
-const size_t MissileStartPos = 0x2dc; //		11.6 ==> 11.7
-const size_t MissileEndPos = 0x2e8; //			11.6 ==> 11.7
+const size_t MissileSpellInfo = 0x0260; //		12.18
+const size_t MissileSrcIdx = 0x2C4; //			12.18
+const size_t MissileDestIdx = 0x318; //			12.18
+const size_t MissileStartPos = 0x02DC; //		12.18
+const size_t MissileEndPos = 0x02E8; //			12.18
 
 //SpellData
 const size_t oManaCost = 0x52C;//0xD997830A
@@ -472,15 +474,15 @@ const size_t O_BUFFMGR_IsPermanent = 0x70;
 const size_t O_BUFFMGR_BUFFINFO = 0x20;
 
 //AI MGR
-const size_t O_AIMGR_TARGETPOS = 0x10;					// 10.10	| where the target is going?
-const size_t O_AIMGR_ISMOVING = 0x1C0;					// 11.14	| ??
-const size_t O_AIMGR_ISDASHING = 0x214;					// 10.10	|
-const size_t O_AIMGR_DASHSPEED = 0x1F8;					// 11.14	|
-const size_t O_AIMGR_NAVBEGIN = 0x1E4;					// 11.14 | pathlist
-const size_t O_AIMGR_NAVEND = 0x1E8;					// 11.14
-const size_t O_AIMGR_PASSED_WAYPOINTS = 0x1C4;			// 11.14	
-const size_t O_AIMGR_CURRENTPOS = 0x2EC;				// 11.14
-const size_t O_AIMGR_VELOCITY = 0x2F0;					// 11.14
+const size_t O_AIMGR_TARGETPOS = 0x10;					// 12.18	| where the target is going?
+const size_t O_AIMGR_ISMOVING = 0x1C0;					// 12.18	| ??
+const size_t O_AIMGR_ISDASHING = 0x214;					// 12.18	|
+const size_t O_AIMGR_DASHSPEED = 0x1F8;					// 12.18	|
+const size_t O_AIMGR_NAVBEGIN = 0x1CC;					// 12.18
+const size_t O_AIMGR_NAVEND = 0x1D8;					// 12.18
+const size_t O_AIMGR_PASSED_WAYPOINTS = 0x1C4;			// 12.18	
+const size_t O_AIMGR_CURRENTPOS = 0x230;				// 12.18
+const size_t O_AIMGR_VELOCITY = 0x2f8;					// 12.18
 
 enum ENavMash
 {
