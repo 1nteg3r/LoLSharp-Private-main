@@ -87,7 +87,7 @@ struct Offsets_Garena
 	const size_t oObjBaseAtk = 0x1354;						//  | 12.18
 	const size_t oObjBonusAtk = 0x12CC;						//  | 12.18
 	const size_t oObjAP = 0x1750;						//  | 
-	const size_t oObjBonusAP = 0x11F4;						//  | 
+	const size_t oObjBonusAP = oObjAP - 0x88;						//  | 
 	const size_t oObjMR = 0x1384;						//  | 
 	const size_t oObjBonusMR = 0x1388;						//  | 
 	const size_t oObjAtkRange = 0x139C;						//  | 12.18
