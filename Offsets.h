@@ -380,7 +380,7 @@ struct Offsets_Riot
 	const size_t oObjMagicResist = oCharacterIntermediate + 0x200;
 	const size_t oObjBonusMagicResist = oCharacterIntermediate + 0x210;
 	const size_t oObjHealthRegen = oCharacterIntermediate + 0x220;
-	const size_t oObjMoveSpeed = oCharacterIntermediate + 0x240;
+	const size_t oObjMoveSpeed = 0x1394;
 	const size_t oObjAttackRange = oCharacterIntermediate + 0x260;
 	const size_t oObjPhysicalLethality = oCharacterIntermediate + 0x2A0;
 	const size_t oObjPercentArmorPenetration = oCharacterIntermediate + 0x2B0;
