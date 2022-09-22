@@ -60,7 +60,7 @@ struct Offsets_Garena
 	const size_t oObjInventory = 0x3588;						//  | 12.18
 	const size_t oObjChampionName2 = 0x2CB4;						//  | not used
 	const size_t oObjChampionName = 0x2D5C;						//  | 12.18
-	const size_t oObjSkinData = 0x2D34;						//  | 
+	const size_t oObjSkinData = 0x2D34;						//  | 12.18 same as PreChaaarData
 	const size_t oObjBoundingRadius = 0x458;						//  | 
 	const size_t oAttackInfo = 0x30DA608;						//  | 0x35DA608
 	const size_t oAttackData = 0x2A28;						//  | 
