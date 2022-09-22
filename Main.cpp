@@ -2883,6 +2883,12 @@ void initLOL()
 		kalista->Add();
 		break;
 	}
+	case FNV("Samira"):
+	{
+		samira = new Samira();
+		samira->Add();
+		break;
+	}
 	case FNV("Ezreal"):
 	{
 		ezreal = new Ezreal();

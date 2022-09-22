@@ -1079,6 +1079,21 @@ float GetSpellDamage(CObject* source, CObject* target, SpellSlot slot, bool retu
 			break;
 		}
 		break; }
+	case FNV("Samira"):
+	{
+		switch (slot)
+		{
+		case SpellSlot::Q:
+			input.RawPhysicalDamage = get_spell_damage_table(0, 5, spell_level) + get_spell_damage_table(0.85, 0.10, spell_level) * source->TotalAttackDamage();
+			break;
+		case SpellSlot::W:
+			input.RawPhysicalDamage = get_spell_damage_table(20, 15, spell_level) + 0.8 * source->TotalAttackDamage();
+			break;
+		case SpellSlot::E:
+			input.RawMagicalDamage = get_spell_damage_table(50, 10, spell_level) + 0.2 * source->TotalAttackDamage();
+			break;
+		}
+		break; }
 	case FNV("Khazix"):
 	{
 		switch (slot)
