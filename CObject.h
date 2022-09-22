@@ -761,7 +761,7 @@ public:
 
 	float AttackDelay()
 	{
-		float minAttackSpeed = 0.400000006f;
+		float minAttackSpeed = 0.400000006f;	
 		float maxAttackSpeed = 5.f;
 
 		LeagueObfuscationFloat attackDelayOffset1enc;
