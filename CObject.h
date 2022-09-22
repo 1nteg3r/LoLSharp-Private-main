@@ -267,7 +267,7 @@ public:
 	MAKE_DATA(float, SpellVamp, offsets_lol.oObjSpellVamp);
 	MAKE_DATA(float, Tenacity, offsets_lol.oObjTenacity);
 	MAKE_DATA(float, ResourceRegen, offsets_lol.oObjResourceRegen);
-	MAKE_DATA(float, ObjectScale, 0x1740);
+	MAKE_DATA(float, ObjectScale, 0x136C); //12.18
 	MAKE_DATA(kGameObjectStatusFlags, StatusFlags, oStatusFlag);
 	MAKE_PTR(CSpellBook*, GetSpellBook, offsets_lol.oObjSpellBook);
 	MAKE_PTR(CInventory*, GetInventory, offsets_lol.oObjInventory);
@@ -766,7 +766,7 @@ public:
 
 		LeagueObfuscationFloat attackDelayOffset1enc;
 
-		ReadVirtualMemory((void*)((DWORD)this + 0x2E34), &attackDelayOffset1enc, sizeof(LeagueObfuscationFloat));
+		ReadVirtualMemory((void*)((DWORD)this + 0x2FEC), &attackDelayOffset1enc, sizeof(LeagueObfuscationFloat)); //12.18
 
 		float attackDelayOffset1 = decrypt_float(attackDelayOffset1enc);
 		if (attackDelayOffset1 > 0.0000099999997)
@@ -774,7 +774,7 @@ public:
 
 
 		LeagueObfuscationFloat attackDelayOffset2enc;
-		ReadVirtualMemory((void*)((DWORD)this + 0x2E50), &attackDelayOffset2enc, sizeof(LeagueObfuscationFloat));
+		ReadVirtualMemory((void*)((DWORD)this + 0x3008), &attackDelayOffset2enc, sizeof(LeagueObfuscationFloat)); //12.18
 
 
 
