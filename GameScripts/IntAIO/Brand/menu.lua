@@ -1,0 +1,28 @@
+local menu = menu("IntnnerBrand", "Int Brand")
+  menu:menu('combo', 'Combo')
+  menu.combo:header('misc', 'Mode Q.')
+    menu.combo:dropdown('q', 'Use Q', 2, { 'Never', 'Stun', 'Always' })
+    menu.combo:header('xd1', 'Combo.')
+    menu.combo:boolean('w', 'Use W', true)
+    menu.combo:boolean('e', 'Use E', true)
+    menu.combo:menu('r', 'R Settings')
+      menu.combo.r:boolean('r', 'Use R', true)
+      menu.combo.r:slider('min_r', "Minimum Enemies to use R", 2, 1, 5, 1)
+      menu.combo.r:boolean('r_kill', "R killable", true)
+        --menu.combo.r.r_kill:set('tooltip', "This will override minimum enemy check.")
+      menu:menu('harass', 'Harass')
+    menu.harass:dropdown('q', 'Use Q', 2, { 'Never', 'Stun', 'Always' })
+    menu.harass:boolean('w', 'Use W', true)
+    menu.harass:boolean('e', 'Use E', true)
+
+  menu:menu('misc', 'Misc')
+    menu.misc:boolean('auto_q', 'Auto Stun (Q)', true)
+      --menu.auto_q:set('tooltip', "If both Combo Mode and Hybrid/Harass Mode have 'Q' disabled, this will be disabled too.")
+    menu:menu('draws', 'Drawings')
+      menu.draws:boolean('display', 'Disable Display', false)
+      menu.draws:boolean('q_range', 'Q Range', true)
+      menu.draws:boolean('w_range', 'W Range', true)
+      menu.draws:boolean('r_range', 'R Range', true)
+
+
+return menu

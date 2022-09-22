@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\ChampionScript">
+      <UniqueIdentifier>{d8133061-015a-48ea-91ae-42bd37ba7470}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utility">
+      <UniqueIdentifier>{14e218d2-3234-4b6d-8f90-cd67da7d765b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Menu">
+      <UniqueIdentifier>{ebc97f1a-c138-4454-8010-b6bfddeb6b48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ImGui">
+      <UniqueIdentifier>{5ac950b4-4e4e-4958-9ea7-d23d6a8818d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LoLSharp_classes">
+      <UniqueIdentifier>{797c3be4-ef0b-4152-9fff-60cdd6c1b013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lib">
+      <UniqueIdentifier>{de0fe325-b0bb-459b-ba16-e5f91240725c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{d32011ca-d96e-4b8f-80fa-2879fa7038ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderer">
+      <UniqueIdentifier>{02aee21d-f314-4820-91d0-0c3bc52b9892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ChampionScript\ADC">
+      <UniqueIdentifier>{273a01ed-fd67-43f4-9bc7-58eec78c53db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ChampionScript\JUNGLER">
+      <UniqueIdentifier>{d0ddebef-19a8-4d68-978c-a095f8f249bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ChampionScript\TOP">
+      <UniqueIdentifier>{383be8f0-1c07-449f-bbfc-46cad3c2aa98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ChampionScript\MID">
+      <UniqueIdentifier>{d889f3fc-47d1-47a4-a062-8a60501ae402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ChampionScript\SUP">
+      <UniqueIdentifier>{f163f627-94f7-498f-9b32-ca2cdb3ed32a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TCPS">
+      <UniqueIdentifier>{2d059e55-44cd-4f60-81d2-c76db96f4c36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Slider.cpp">
+      <Filter>Header Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect.cpp">
+      <Filter>Header Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuSettings.cpp">
+      <Filter>Header Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuComponent.cpp">
+      <Filter>Header Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Header Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="List.cpp">
+      <Filter>Header Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyBind.cpp">
+      <Filter>Header Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Info.cpp">
+      <Filter>Header Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="HudManager.cpp">
+      <Filter>Header Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckBox.cpp">
+      <Filter>Header Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Header Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Header Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Anim.cpp">
+      <Filter>Header Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="buffer.cpp">
+      <Filter>Header Files\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>Header Files\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Header Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>Header Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>Header Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx9.cpp">
+      <Filter>Header Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>Header Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_stdlib.cpp">
+      <Filter>Header Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>Header Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="clipper.cpp">
+      <Filter>Header Files\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="CPULimit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPS\TCPS.cpp">
+      <Filter>Header Files\TCPS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Offsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VMProtectSDK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>Header Files\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuSettings.h">
+      <Filter>Header Files\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuComponent.h">
+      <Filter>Header Files\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="List.h">
+      <Filter>Header Files\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Info.h">
+      <Filter>Header Files\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="HudManager.h">
+      <Filter>Header Files\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckBox.h">
+      <Filter>Header Files\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CActiveSpellEntry.h">
+      <Filter>Header Files\LoLSharp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CAIManger.h">
+      <Filter>Header Files\LoLSharp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CBuffEntry.h">
+      <Filter>Header Files\LoLSharp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CBuffManager.h">
+      <Filter>Header Files\LoLSharp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CInventory.h">
+      <Filter>Header Files\LoLSharp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CObject.h">
+      <Filter>Header Files\LoLSharp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CSkinData.h">
+      <Filter>Header Files\LoLSharp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpellBook.h">
+      <Filter>Header Files\LoLSharp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpellData.h">
+      <Filter>Header Files\LoLSharp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpellSlot.h">
+      <Filter>Header Files\LoLSharp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="XPolygon.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="engine.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Devices.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dfunction.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="DamageLibrary.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Database.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="ntlpcapi.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="myapi.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="buffer.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Anim.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="XorString.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="JustEvade.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="CastSpell.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Activator.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx9.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_stdlib.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>Header Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Awareness.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="IDA.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="DelayAction.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyBind.h">
+      <Filter>Header Files\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="DashCast.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseUlt.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="clipper.hpp">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lol_reclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleManager.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Orbwalker.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Prediction.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetSelector.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="colorwin.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="CPULimit.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpplinq.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTP.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSimulator.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugTool.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Assembly.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Slider.h">
+      <Filter>Header Files\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sysnal\sysnal\stream.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPS\TCPS.h">
+      <Filter>Header Files\TCPS</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\AIOBottomLane.h">
+      <Filter>Header Files\ChampionScript</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\AIOJungler.h">
+      <Filter>Header Files\ChampionScript</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\AIOMidLane.h">
+      <Filter>Header Files\ChampionScript</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\AIOSupport.h">
+      <Filter>Header Files\ChampionScript</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\AIOTopLane.h">
+      <Filter>Header Files\ChampionScript</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\ADC\Zeri.h">
+      <Filter>Header Files\ChampionScript\ADC</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\ADC\Ezreal.h">
+      <Filter>Header Files\ChampionScript\ADC</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\ADC\Jinx.h">
+      <Filter>Header Files\ChampionScript\ADC</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\ADC\Kaisa.h">
+      <Filter>Header Files\ChampionScript\ADC</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\ADC\Kalista.h">
+      <Filter>Header Files\ChampionScript\ADC</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\ADC\Lucian.h">
+      <Filter>Header Files\ChampionScript\ADC</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\ADC\Varus.h">
+      <Filter>Header Files\ChampionScript\ADC</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\ADC\Vayne.h">
+      <Filter>Header Files\ChampionScript\ADC</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\JUNGLER\XinZhao.h">
+      <Filter>Header Files\ChampionScript\JUNGLER</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\JUNGLER\Diana.h">
+      <Filter>Header Files\ChampionScript\JUNGLER</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\JUNGLER\Hecarim.h">
+      <Filter>Header Files\ChampionScript\JUNGLER</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\JUNGLER\Khazix.h">
+      <Filter>Header Files\ChampionScript\JUNGLER</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\JUNGLER\Nidalee.h">
+      <Filter>Header Files\ChampionScript\JUNGLER</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\JUNGLER\Olaf.h">
+      <Filter>Header Files\ChampionScript\JUNGLER</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\JUNGLER\Talon.h">
+      <Filter>Header Files\ChampionScript\JUNGLER</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\JUNGLER\Udyr.h">
+      <Filter>Header Files\ChampionScript\JUNGLER</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\MID\Yone.h">
+      <Filter>Header Files\ChampionScript\MID</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\MID\Cassiopeia.h">
+      <Filter>Header Files\ChampionScript\MID</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\MID\Orianna.h">
+      <Filter>Header Files\ChampionScript\MID</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\MID\Syndra.h">
+      <Filter>Header Files\ChampionScript\MID</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\MID\Viktor.h">
+      <Filter>Header Files\ChampionScript\MID</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\MID\Xerath.h">
+      <Filter>Header Files\ChampionScript\MID</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\TOP\Riven.h">
+      <Filter>Header Files\ChampionScript\TOP</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\TOP\Darius.h">
+      <Filter>Header Files\ChampionScript\TOP</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\TOP\Fiora.h">
+      <Filter>Header Files\ChampionScript\TOP</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\TOP\Gangplank.h">
+      <Filter>Header Files\ChampionScript\TOP</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\TOP\Irelia.h">
+      <Filter>Header Files\ChampionScript\TOP</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionScript\TOP\Quinn.h">
+      <Filter>Header Files\ChampionScript\TOP</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="syscall.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LeagueOfLegendsProject.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="x64\Release\LOGO.PNG">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="x64\Release\yts.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

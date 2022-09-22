@@ -1,0 +1,38 @@
+local orb = module.internal("orb");
+local evade = module.seek("evade")
+local core = module.load("int", "Core/Morgana/core")
+local menu = module.load("int", "Core/Morgana/menu")
+local q = module.load("int", "Core/Morgana/spells/q")
+local w = module.load("int", "Core/Morgana/spells/w")
+local e = module.load("int", "Core/Morgana/spells/e")
+local r = module.load("int", "Core/Morgana/spells/r")
+
+local function orb_on_tick()
+  core.get_action()
+end
+orb.combat.register_f_pre_tick(orb_on_tick)
+
+local function on_recv_spell(spell)
+  if spell.owner.ptr == player.ptr then
+    core.on_recv_spell(spell)
+  end
+  if not evade and menu.e.use:get() then
+    if spell.owner.team == TEAM_ENEMY then
+      e.on_recv_spell(spell)
+    end
+  end
+end
+
+local function on_draw()
+  if player.isOnScreen then
+    q.on_draw()
+    w.on_draw()
+    e.on_draw()
+    r.on_draw()
+  end
+end
+
+cb.add(cb.spell, on_recv_spell)
+cb.add(cb.draw, on_draw)
+
+return {}

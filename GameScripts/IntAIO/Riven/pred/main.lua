@@ -1,0 +1,15 @@
+return {
+  aa = module.load("int", "Core/Riven/pred/aa"); --require'Core/Riven/pred/aa',
+  q =  module.load("int", "Core/Riven/pred/q");--require'Core/Riven/pred/q',
+  w =  module.load("int", "Core/Riven/pred/w");--require'Core/Riven/pred/w',
+  e =  module.load("int", "Core/Riven/pred/e");--require'Core/Riven/pred/e',
+  e_q =  module.load("int", "Core/Riven/pred/e_q");--require'Core/Riven/pred/e_q',
+  e_w =  module.load("int", "Core/Riven/pred/e_w");--require'Core/Riven/pred/e_w',
+  flash_w =  module.load("int", "Core/Riven/pred/flash_w");--require'Core/Riven/pred/flash_w',
+  flash_q =  module.load("int", "Core/Riven/pred/flash_q");--require'Core/Riven/pred/flash_q',
+  e_flash_w =  module.load("int", "Core/Riven/pred/e_flash_w");--require'Core/Riven/pred/e_flash_w',
+  e_flash_q =  module.load("int", "Core/Riven/pred/e_flash_q");--require'Core/Riven/pred/e_flash_q',
+  r1 =  module.load("int", "Core/Riven/pred/r1");--require'Core/Riven/pred/r1',
+  r2 =  module.load("int", "Core/Riven/pred/r2");--require'Core/Riven/pred/r2',
+  r2_dmg =  module.load("int", "Core/Riven/pred/r2_dmg");--require'Core/Riven/pred/r2_dmg',
+}
