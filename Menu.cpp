@@ -93,10 +93,6 @@ void NewMenu::Initialize() {
 	MenuSettings::RightSide = MinimapSettings->AddCheckBox("MinimapRightSide", "Minimap on Right Side", true, [](CheckBox*, bool value) {
 		MenuSettings::RightSide = value;
 	})->Value;
-
-	/*MenuSettings::Ping = menu->AddSlider("Ping", "Ping", 50, 10, 500, 1, [](Slider*, int value) {
-		MenuSettings::Ping = value;
-		})->Value;*/
 }
 
 void NewMenu::Dispose() {
