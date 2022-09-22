@@ -476,9 +476,6 @@
     <ClInclude Include="ChampionScript\TOP\Quinn.h">
       <Filter>Header Files\ChampionScript\TOP</Filter>
     </ClInclude>
-    <ClInclude Include="Samira.h">
-      <Filter>Header Files\ChampionScript\ADC</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <MASM Include="syscall.asm">

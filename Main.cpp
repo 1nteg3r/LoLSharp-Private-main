@@ -2919,6 +2919,13 @@ void initLOL()
 		yone->Add();
 		break;
 	}
+	case FNV("Pyke"):
+	{
+		pyke = new Pyke();
+		pyke->Add();
+		break;
+	}
+
 	case FNV("Hecarim"):
 	{
 		hecarim = new Hecarim();

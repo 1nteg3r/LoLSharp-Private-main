@@ -1079,6 +1079,16 @@ float GetSpellDamage(CObject* source, CObject* target, SpellSlot slot, bool retu
 			break;
 		}
 		break; }
+	case FNV("Pyke"):
+	{
+		switch (slot)
+		{
+		case SpellSlot::R:
+			std::array<int, 13> const damage_table = { 250, 290, 330, 370, 400, 430, 450, 470, 490, 510, 530, 540, 550 };
+			input.RawTrueDamage = damage_table[me_level - 6] + 0.8 * source->BonusAttackDamage() + 1.5 * source->PhysicalLethality();
+			break;
+		}
+		break; }
 	case FNV("Samira"):
 	{
 		switch (slot)
@@ -2456,11 +2466,6 @@ float GetSpellDamage(CObject* source, CObject* target, SpellSlot slot, bool retu
 	case FNV("Swain"):
 	{
 		//TODO Swain damageLib
-		//break;
-		break; }
-	case FNV("Pyke"):
-	{
-		//TODO Pyke damageLib
 		//break;
 		break; }
 	//case FNV("Sylas"):
