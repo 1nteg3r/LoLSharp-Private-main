@@ -5,7 +5,7 @@
 struct Offsets_Garena
 {
 
-	const size_t oGameClient = 0x2491BDC;						//  | 0x2991BDC
+	const size_t oGameClient = 0x24ED7A0;						// 12.18? \\\\\\ A1 ? ? ? ? 83 78 08 02 0F 94 C0 \\\\\\\ | 0x2991BDC
 	const size_t oGameState = 0x08;						//  | 
 	const size_t oRiotGameWindow = 0x3108550;						//  | 0x3608550
 	const size_t oPingInstance = 0x0;						//  | ERROR - BROKEN
